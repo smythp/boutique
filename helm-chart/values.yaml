@@ -19,7 +19,7 @@
 images:
   repository: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "v0.10.7"
 
 serviceAccounts:
   # Specifies whether service accounts should be created.
