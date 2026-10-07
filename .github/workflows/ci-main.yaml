@@ -68,11 +68,11 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - id: auth
-      uses: google-github-actions/auth@v3
+      uses: chainguard-actions/google-github-actions-auth@85cdf1b6443ef00c1c6eb5ae27f6cb578a293ada # v3
       with:
         workload_identity_provider: 'projects/816257685787/locations/global/workloadIdentityPools/github-actions-pool/providers/github-provider'
         service_account: 'github-action-runner@online-boutique-ci.iam.gserviceaccount.com'
-    - uses: google-github-actions/setup-gcloud@v2
+    - uses: chainguard-actions/google-github-actions-setup-gcloud@53199b694ab2e2adea63c7e22abe9b13c1357053 # v2
       with:
         install_components: 'gke-gcloud-auth-plugin'
     - name: Set up QEMU
