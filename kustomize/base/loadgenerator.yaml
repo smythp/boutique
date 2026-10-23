@@ -64,7 +64,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: busybox:1.38.0@sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616
+        image: cgr.dev/chainguard.edu/busybox:1.38.0@sha256:fd3b9f6dbcab2ce683304e8ec66bf5a07d6266e4903478f5b754b4d6ead167a2
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
